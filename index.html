@@ -2,92 +2,164 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Rara News - Ketenagakerjaan Pasca Pandemi</title>
+    <title>Rara News | Ketenagakerjaan Pasca Pandemi</title>
+
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f5f5f5;
+        /* RESET */
+        * {
             margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background: #f0f2f5;
+            color: #333;
+        }
+
+        /* ================= HEADER ================= */
         header {
-            background: #ffffff;
-            border-bottom: 1px solid #ddd;
+            background: linear-gradient(90deg, #0b5ed7, #084298);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
         }
 
         .top-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 15px 30px;
+            padding: 18px 40px;
         }
 
         .logo {
-            font-size: 30px;
-            font-weight: bold;
-            color: #0b5ed7;
+            font-size: 32px;
+            font-weight: 700;
+            color: #ffffff;
         }
 
         .logo span {
-            color: #ff6600;
+            color: #635107;
         }
 
         .nav {
-            background: #0b5ed7;
-            padding: 10px 30px;
+            background: rgba(255,255,255,0.1);
+            padding: 12px 40px;
         }
 
         .nav a {
-            color: white;
-            margin-right: 15px;
+            color: #ffffff;
             text-decoration: none;
+            margin-right: 18px;
             font-size: 14px;
+            padding: 6px 14px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
         }
 
+        .nav a:hover {
+            background: #ffffff;
+            color: #0b5ed7;
+        }
+
+        /* ================= CONTENT ================= */
         .container {
             width: 80%;
-            background: #fff;
-            margin: 30px auto;
-            padding: 25px;
-            border-radius: 6px;
+            max-width: 1100px;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 35px;
+            border-radius: 14px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
         }
 
         h1 {
-            font-size: 26px;
-            margin-bottom: 5px;
+            font-size: 30px;
+            color: #0b5ed7;
+            margin-bottom: 8px;
         }
 
         .meta {
             font-size: 13px;
-            color: #777;
-            margin-bottom: 20px;
+            color: #888;
+            margin-bottom: 25px;
         }
 
         .artikel p {
+            font-size: 16px;
+            line-height: 1.9;
+            margin-bottom: 18px;
             text-align: justify;
-            line-height: 1.8;
-            margin-bottom: 15px;
         }
 
+        /* GRAFIK */
         .grafik {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 22px;
+            margin: 35px 0;
             text-align: center;
-            margin: 30px 0;
+            box-shadow: inset 0 0 0 1px #e0e0e0;
         }
 
         .grafik img {
-            width: 80%;
-            border-radius: 6px;
-            border: 1px solid #ddd;
+            width: 85%;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .grafik img:hover {
+            transform: scale(1.02);
         }
 
         .sumber {
+            margin-top: 10px;
             font-size: 12px;
-            color: #555;
+            color: #666;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 13px;
+            color: #aaa;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .top-header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .nav {
+                text-align: center;
+            }
+
+            .nav a {
+                display: inline-block;
+                margin: 6px;
+            }
+
+            .container {
+                width: 95%;
+                padding: 25px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .artikel p {
+                font-size: 15px;
+            }
         }
     </style>
 </head>
+
 <body>
 
+<!-- HEADER -->
 <header>
     <div class="top-header">
         <div class="logo">Rara<span>News</span></div>
@@ -97,86 +169,304 @@
         <a href="#">Ekonomi</a>
         <a href="#">Ketenagakerjaan</a>
         <a href="#">Pendidikan</a>
+        <a href="#">Data & Statistik</a>
     </div>
 </header>
 
+<!-- CONTENT -->
 <div class="container">
     <h1>Analisis Ketenagakerjaan Pasca Pandemi Covid-19 di Indonesia</h1>
     <div class="meta">Rara News | Berdasarkan Data BPS | Periode 2022–2024</div>
 
     <div class="artikel">
         <p>
-            Pandemi Covid-19 yang melanda Indonesia sejak tahun 2020 memberikan dampak
-            signifikan terhadap berbagai aspek kehidupan, khususnya pada sektor
-            ketenagakerjaan. Pembatasan aktivitas masyarakat, penurunan permintaan
-            barang dan jasa, serta tutupnya sejumlah usaha menyebabkan banyak tenaga
-            kerja kehilangan pekerjaan atau mengalami pengurangan jam kerja.
+            Pandemi Covid-19 memberikan dampak yang sangat besar terhadap kondisi
+            ketenagakerjaan di Indonesia. Pembatasan aktivitas masyarakat, penurunan
+            produksi, serta tutupnya berbagai sektor usaha menyebabkan meningkatnya
+            jumlah pengangguran dan berkurangnya jam kerja tenaga kerja.
         </p>
 
         <p>
-            Berdasarkan data Badan Pusat Statistik (BPS), pada puncak pandemi tahun
-            2020–2021, jumlah pengangguran meningkat tajam akibat banyaknya perusahaan
-            yang melakukan efisiensi tenaga kerja. Namun, memasuki periode pasca
-            pandemi, yaitu tahun 2022 hingga 2024, kondisi ketenagakerjaan di Indonesia
-            mulai menunjukkan tren pemulihan yang cukup positif.
+            Menurut Badan Pusat Statistik (BPS), pada masa awal pandemi jumlah penduduk
+            yang terdampak langsung oleh Covid-19 cukup tinggi, baik dalam bentuk
+            pengangguran, setengah pengangguran, maupun pekerja yang dirumahkan.
+            Namun, memasuki periode pasca pandemi, khususnya tahun 2022 hingga 2024,
+            kondisi pasar tenaga kerja mulai menunjukkan tanda-tanda pemulihan.
         </p>
 
         <p>
-            Tingkat Pengangguran Terbuka (TPT) di Indonesia pada tahun 2022 tercatat
-            sebesar sekitar 5,86 persen. Angka ini mengalami penurunan dibandingkan
-            tahun sebelumnya seiring dengan mulai pulihnya aktivitas ekonomi dan
-            meningkatnya mobilitas masyarakat. Sektor-sektor seperti perdagangan,
-            industri pengolahan, transportasi, dan jasa mengalami peningkatan
-            penyerapan tenaga kerja.
+            Pada tahun 2022, Tingkat Pengangguran Terbuka (TPT) Indonesia tercatat
+            sebesar sekitar 5,86 persen. Angka ini menurun dibandingkan tahun sebelumnya
+            seiring dengan membaiknya kondisi ekonomi nasional dan meningkatnya
+            aktivitas sektor industri, perdagangan, serta jasa.
         </p>
 
         <div class="grafik">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Unemployment_rate_example_chart.png" alt="Grafik Tingkat Pengangguran">
+            <img src="WhatsApp Image 2025-12-17 at 16.28.48_c3d2e947.jpg"
+                 alt="Grafik Tingkat Pengangguran Indonesia">
             <div class="sumber">
                 Sumber: Badan Pusat Statistik (BPS), Survei Angkatan Kerja Nasional (Sakernas)
             </div>
         </div>
 
         <p>
-            Pada tahun 2023, BPS kembali mencatat penurunan Tingkat Pengangguran Terbuka
-            menjadi sekitar 5,32 persen. Penurunan ini menunjukkan bahwa pemulihan
-            ekonomi nasional berjalan cukup stabil. Program-program pemerintah seperti
-            pemulihan UMKM, pelatihan vokasi, serta peningkatan investasi domestik dan
-            asing turut berkontribusi dalam menciptakan lapangan kerja baru.
+            Pada tahun 2023, BPS mencatat penurunan Tingkat Pengangguran Terbuka menjadi
+            sekitar 5,32 persen. Penurunan ini mencerminkan keberhasilan berbagai
+            kebijakan pemerintah dalam mendorong pemulihan ekonomi dan menciptakan
+            lapangan kerja baru, khususnya melalui sektor UMKM dan investasi.
         </p>
 
         <p>
-            Memasuki tahun 2024, kondisi ketenagakerjaan semakin membaik. Meskipun
-            tantangan global seperti ketidakpastian ekonomi dan inflasi masih
-            dirasakan, pasar tenaga kerja Indonesia mampu menunjukkan daya tahan
-            yang cukup kuat. Jumlah penduduk bekerja meningkat, sementara tingkat
-            setengah pengangguran mulai menurun.
+            Memasuki tahun 2024, kondisi ketenagakerjaan Indonesia semakin membaik.
+            Jumlah penduduk bekerja meningkat, sementara tingkat setengah pengangguran
+            mengalami penurunan. Meski demikian, tantangan ketenagakerjaan masih
+            dihadapi, seperti kualitas pekerjaan, ketimpangan upah, dan kesesuaian
+            keterampilan tenaga kerja dengan kebutuhan industri.
         </p>
 
         <p>
-            Namun demikian, pemulihan ketenagakerjaan pasca pandemi masih menghadapi
-            berbagai tantangan. Kualitas pekerjaan, tingkat upah yang layak, serta
-            perlindungan tenaga kerja menjadi isu penting yang perlu mendapat
-            perhatian. Selain itu, kesenjangan keterampilan tenaga kerja dengan
-            kebutuhan industri juga menjadi tantangan utama di era digital saat ini.
+            Oleh karena itu, peningkatan kualitas sumber daya manusia menjadi kunci
+            utama dalam menjaga keberlanjutan pemulihan ketenagakerjaan. Program
+            pelatihan vokasi, sertifikasi kompetensi, serta peningkatan pendidikan
+            diharapkan mampu menciptakan tenaga kerja yang lebih adaptif dan berdaya
+            saing di era pasca pandemi.
         </p>
 
         <p>
-            Oleh karena itu, diperlukan sinergi antara pemerintah, dunia usaha, dan
-            lembaga pendidikan untuk meningkatkan kualitas sumber daya manusia.
-            Peningkatan keterampilan melalui pelatihan, sertifikasi, dan pendidikan
-            vokasi diharapkan mampu menciptakan tenaga kerja yang lebih kompeten dan
-            siap menghadapi perubahan pasar kerja di masa depan.
-        </p>
-
-        <p>
-            Secara keseluruhan, data BPS menunjukkan bahwa kondisi ketenagakerjaan di
-            Indonesia pasca pandemi Covid-19 berada dalam jalur pemulihan yang positif.
-            Dengan kebijakan yang tepat dan berkelanjutan, diharapkan pasar kerja
-            Indonesia dapat menjadi lebih inklusif, produktif, dan berdaya saing.
+            Secara keseluruhan, data BPS menunjukkan bahwa kondisi ketenagakerjaan
+            Indonesia pasca pandemi Covid-19 berada pada jalur pemulihan yang positif.
+            Dengan dukungan kebijakan yang tepat dan berkelanjutan, pasar kerja
+            Indonesia diharapkan menjadi lebih inklusif dan produktif.
         </p>
     </div>
 </div>
+
+
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Rara News | Dashboard Ketenagakerjaan</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+    font-family:'Segoe UI',Tahoma,sans-serif;
+    background:#082c63;
+    color:#333;
+}
+
+/* CONTENT */
+.container{
+    width:85%;
+    max-width:1200px;
+    margin:40px auto;
+}
+
+.section{
+    background:#fff;
+    padding:30px;
+    margin-bottom:30px;
+    border-radius:14px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.section h2{
+    color:#0b5ed7;
+    margin-bottom:15px;
+}
+
+.section p{
+    line-height:1.9;
+    margin-bottom:15px;
+    text-align:justify;
+}
+
+/* GRID DASHBOARD */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#9ac1e9;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:inset 0 0 0 1px #ddd;
+}
+
+.card h3{
+    color:#084298;
+    margin-bottom:10px;
+}
+
+.card ul{
+    padding-left:18px;
+}
+
+.card li{
+    margin-bottom:8px;
+    font-size:14px;
+}
+
+/* GRAFIK */
+.grafik{
+    text-align:center;
+    margin:25px 0;
+}
+
+.grafik img{
+    width:80%;
+    border-radius:10px;
+    border:1px solid #ddd;
+}
+
+.sumber{
+    font-size:12px;
+    color:#666;
+    margin-top:5px;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    color:#aaa;
+    font-size:13px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- NASIONAL -->
+<section class="section">
+<h2>Nasional</h2>
+<p>
+Secara nasional, Indonesia mengalami pemulihan pasca pandemi Covid-19 sejak tahun
+2022. Aktivitas ekonomi dan sosial kembali berjalan normal, sehingga berdampak
+positif terhadap peningkatan jumlah penduduk bekerja.
+</p>
+</section>
+
+<!-- EKONOMI -->
+<section class="section">
+<h2>Ekonomi</h2>
+<p>
+Pemulihan ekonomi nasional berkontribusi besar terhadap perbaikan kondisi
+ketenagakerjaan. Sektor industri, perdagangan, dan jasa menjadi penyumbang utama
+penyerapan tenaga kerja.
+</p>
+
+<div class="grid">
+<div class="card">
+<h3>Indikator Ekonomi</h3>
+<ul>
+<li>Pertumbuhan ekonomi stabil (2022–2024)</li>
+<li>Konsumsi rumah tangga meningkat</li>
+<li>UMKM mulai pulih</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Dampak ke Tenaga Kerja</h3>
+<ul>
+<li>Penyerapan tenaga kerja meningkat</li>
+<li>Pengangguran menurun</li>
+<li>Sektor formal bertambah</li>
+</ul>
+</div>
+</div>
+</section>
+
+<!-- KETENAGAKERJAAN -->
+<section class="section">
+<h2>Ketenagakerjaan</h2>
+<p>
+Berdasarkan data Survei Angkatan Kerja Nasional (Sakernas) BPS, Tingkat Pengangguran
+Terbuka (TPT) Indonesia menunjukkan tren penurunan sejak tahun 2022.
+</p>
+
+<div class="grafik">
+<img src="Screenshot 2025-12-17 170852.png" alt="Grafik Pengangguran">
+<div class="sumber">Sumber: Badan Pusat Statistik (BPS)</div>
+</div>
+
+<p>
+TPT Indonesia pada tahun 2023 tercatat sekitar 5,32%, turun menjadi sekitar 4,91%
+pada tahun 2024 dan terus membaik di tahun 2025.
+</p>
+</section>
+
+<!-- PENDIDIKAN -->
+<section class="section">
+<h2>Pendidikan</h2>
+<p>
+Pendidikan memiliki peran penting dalam pemulihan ketenagakerjaan pasca pandemi.
+Peningkatan keterampilan melalui pendidikan vokasi dan pelatihan kerja menjadi
+fokus utama pemerintah.
+</p>
+
+<div class="grid">
+<div class="card">
+<h3>Peran Pendidikan</h3>
+<ul>
+<li>Pendidikan vokasi</li>
+<li>Pelatihan kerja</li>
+<li>Literasi digital</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Tantangan</h3>
+<ul>
+<li>Kesenjangan keterampilan</li>
+<li>Akses pendidikan belum merata</li>
+<li>Adaptasi teknologi</li>
+</ul>
+</div>
+</div>
+</section>
+
+<!-- DATA & STATISTIK -->
+<section class="section">
+<h2>Data & Statistik</h2>
+<p>
+Ringkasan data ketenagakerjaan Indonesia pasca pandemi berdasarkan Badan Pusat
+Statistik (BPS):
+</p>
+
+<div class="grid">
+<div class="card">
+<h3>Statistik Utama</h3>
+<ul>
+<li>TPT 2023: ± 5,32%</li>
+<li>TPT 2024: ± 4,91%</li>
+<li>TPT 2025: ± 4,85%</li>
+<li>Penduduk bekerja meningkat</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Kondisi Pasca Pandemi</h3>
+<ul>
+<li>Setengah pengangguran menurun</li>
+<li>Pekerja formal meningkat</li>
+<li>Sektor jasa dominan</li>
+</ul>
+</div>
+</div>
+</section>
+
+</div>
+
+<footer>
+© 2025 Rara News | Sumber Data: Badan Pusat Statistik (BPS)
+</footer>
 
 </body>
 </html>
